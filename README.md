@@ -18,7 +18,7 @@ As shown in **Figure 1**: (a) The drone is flying close to the ground, ensuring 
 As shown in **Figure 2**, the ground effectness can be seen as the counterweight ball hanging below the multicopter.
 
 <p align="center">
-  <img src="archieve/head.png" title="Figure 1" width=75%/>
+  <img src="archieve/experiment.png" title="Figure 1" width=75%/>
   <br>
   <em>Figure 3: Experiment via real platform and fluid simulation</em>
 </p>
