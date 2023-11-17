@@ -22,7 +22,7 @@ As shown in **Figure 2**, the ground effectness can be seen as the counterweight
   <br>
   <em>Figure 3: Experiment via real platform and fluid simulation</em>
 </p>
-As shown in **Figure 3**: Experimental environment for model validation (including both realworld and simulation). (a) Platform for an individual motor. (b)∼(g) The test platform uses wooden planks to simulate the ground and collect data on the ground effect disturbances experienced by multicopter. (b)∼(d) The ground height can be adjusted. (e)∼(g) The tilt angle can be adjusted to simulate the pitch angle of the multicopter. (h)∼(n) CFD simulation was used to verify the model. (h) Airflow velocity (m/s) in Fig. (h)∼(n).
+As shown in __Figure 3__: Experimental environment for model validation (including both realworld and simulation). (a) Platform for an individual motor. (b)∼(g) The test platform uses wooden planks to simulate the ground and collect data on the ground effect disturbances experienced by multicopter. (b)∼(d) The ground height can be adjusted. (e)∼(g) The tilt angle can be adjusted to simulate the pitch angle of the multicopter. (h)∼(n) CFD simulation was used to verify the model. (h) Airflow velocity (m/s) in Fig. (h)∼(n).
 
 ## preprint paper
-The paper [Ground Effect-Aware Modeling and Control for Multicopters: Enhanced Precision and Energy Efficiency] is submitted to IEEE/ASME Transactions on Mechatronics(T-MECH), which is under review now.
+The paper, "Ground Effect-Aware Modeling and Control for Multicopters: Enhanced Precision and Energy Efficiency", is submitted to IEEE/ASME Transactions on Mechatronics(T-MECH), which is under review now.
