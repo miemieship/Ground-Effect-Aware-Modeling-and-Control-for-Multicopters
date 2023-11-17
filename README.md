@@ -1,19 +1,28 @@
 # Ground-Effect-Aware-Modeling-and-Control-for-Multicopters
-# Improving Localization Reliability with Path Planning
-Perception-aware path planning metric design. Submission to ICRA2024.
+Ground effectness investigation. Submission to TMECH.
 ## Introduction
-Just as even humans can get lost in the face of extremely monotonous or blurry observations from the eyes, not all scenarios are favorable for robot localization. To address this challenge, our objective is to identify areas that are favorable for robot localization. Existing assessment methods mainly focus on the richness of observed features, which results in potential failures when facing scenarios involving cluttered features and severe noise interference. In this paper, we propose a metric that considers these factors by introducing perturbations into the observations and analyzing how the intensity and direction of the perturbations affect pose estimation. We validate the effectiveness of our proposed metric through benchmark comparisons in various scenarios. Furthermore, we implement a planning framework that incorporates the proposed metric, enabling robots to make intelligent decisions by selecting localization-friendly topologies and sensor orientations.
+This study investigates the dynamic characteristics of multicopters during near-ground flight and proposes a set of dynamic models and control methods. Through the utilization of a physical dynamics testing platform and Computational Fluid Dynamics (CFD) simulation, the analysis and research are conducted on the disturbances experienced by multicopters during near-ground flight. Simplified models for ground effect forces and moments are presented, along with a corresponding control framework, to ensure the stability of multicopters during nearground flight. Notably, the modeling and compensation control methods for external moments (excluding external forces) are believed to be pioneering in this study. Additionally, a center of gravity height optimization method is introduced to take advantage of the energy-saving properties of ground effect, ensuring a low center of gravity height for the multicopters during flight while avoiding contact with the ground.
 
-<div align="center">
-<img src="archieve/head.png" title="result image" width=75%/>
-</div>
+<p align="center">
+  <img src="archieve/head.png" title="Figure 1" width=75%/>
+  <br>
+  <em>Figure 1: ANSYS analysis and our drone</em>
+</p>
+As shown in **Figure 1**: (a) The drone is flying close to the ground, ensuring a consistent distance from the surface as it navigates. (b) Multicopter flying at a level attitude near the ground encounter airflow patterns influenced by changes in airflow direction. These variations in airflow direction can create reversed momentum, which may be a contributing factor to the generation of additional forces. (c) Blades with different height from the ground have different pressure differences in the CFD simulation. (d)(e) The difference in pressure between the upper and lower surfaces of the propeller blades can potentially result in the generation of a torque that helps bring the drone’s attitude back to a level position.
 
-As the **above Figure** shows, the proposed metric is used to identify localization-friendly areas. Figure (c) illustrates the complete scene, while Figures (a) and (b) depict localized views within the scene. Figure (d) shows the result of evaluating this scenario using the proposed metric, where larger values indicate poorer observation quality and areas with a value of 0.0 indicate obstacles. The main sensor of the localization system is a rotating LiDAR, and the observation equation of the localization system is defined as the distance between the LiDAR point and the nearest plane.
+<p align="center">
+  <img src="archieve/analysis.png" title="Figure 2" width=75%/>
+  <br>
+  <em>Figure 2: Force analysis and its equivalent form</em>
+</p>
+As shown in **Figure 2**, the ground effectness can be seen as the counterweight ball hanging below the multicopter.
 
-## vedio
-Click on the image below to watch the experimental video:
-
-[![Watch the video](archieve/bilibili.png)](//player.bilibili.com/player.html?aid=916491163&bvid=BV1tu4y147L5&cid=1279018108&p=1)
+<p align="center">
+  <img src="archieve/head.png" title="Figure 1" width=75%/>
+  <br>
+  <em>Figure 3: Experiment via real platform and fluid simulation</em>
+</p>
+As shown in **Figure 3**: Experimental environment for model validation (including both realworld and simulation). (a) Platform for an individual motor. (b)∼(g) The test platform uses wooden planks to simulate the ground and collect data on the ground effect disturbances experienced by multicopter. (b)∼(d) The ground height can be adjusted. (e)∼(g) The tilt angle can be adjusted to simulate the pitch angle of the multicopter. (h)∼(n) CFD simulation was used to verify the model. (h) Airflow velocity (m/s) in Fig. (h)∼(n).
 
 ## preprint paper
-The paper is submitted to ICRA2024, which is under review now. Click [here](archieve/ICRA2024_Perception_Aware.pdf) to see the preprint version.
+The paper [Ground Effect-Aware Modeling and Control for Multicopters: Enhanced Precision and Energy Efficiency] is submitted to IEEE/ASME Transactions on Mechatronics(T-MECH), which is under review now.
